@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="map_api_key">AIzaSyBQo-BQvUYPI1IZJ3kPXAiewuH2uH50G8o</string>
+    <string name="addmob_api_key">ca-app-pub-5015922634032536/2779193939</string>
+    <string name="registration_url">http://sastechno.com/webservice/user-registration</string>
+    <string name="forgotpassword_url">http://sastechno.com/webservice/forget-password</string>
+    <string name="login_url">http://sastechno.com/webservice/user-login</string>
+    <string name="job_submit_url">http://sastechno.com/webservice/register-job</string>
+    <string name="job_list_url">http://sastechno.com/webservice/user-job-lists</string>
+    <string name="get_profile_url">http://sastechno.com/webservice/get-profile</string>
+    <string name="edit_profile_url">http://sastechno.com/webservice/edit-profile</string>
+    <string name="history_url">http://sastechno.com/webservice/history-job</string>
+    <string name="get_subscription_url">http://sastechno.com/webservice/user-subscription-lastdate</string>
+    <string name="order_purchase_url">http://sastechno.com/webservice/order-purchase</string>
+    <string name="delete_job_url">http://sastechno.com/webservice/job-delete</string>
+    <string name="update_job_url">http://sastechno.com/webservice/update-job</string>
+    <string name="auto_delete_url">http://sastechno.com/webservice/cron-job</string>
+    <string name="public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsBNStgBPBqD1YWgq0YQH37SUuwjnr6SU3FOYZzt1KveSB2u4T2M5RiDSY1OfClg3G61V5HHwL4u4431WgP2S7ai4eOjGnM5zeP0lmp/mJJTrkhm10BAk61I3c+78AUjn1pdErju26X+o09Pa99yCl1UIFMFW8rAxIQiYnrI0jvWlZTu60dtceHEHH5siZ2NfByvrimzaOhy7pHtGgFChTupLTMuHCYSVbcB+qdQdicyrWOZRMN7f98j+zohct9shqkaPyhZIo42YEw4pxWxj5wLOzeCi/D6BDRZZXgzOazc5s+WtgW9pECeMcSil7bQnsAknH5+0pUk8XxeId/WxHwIDAQAB</string>
+
+</resources>

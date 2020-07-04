@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sas.part.time.job.fragment$HomeFragment" >
+
+    <Button
+        android:id="@+id/home_fragment_center"
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_fragment_center"
+        android:background="#494E52" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_fragment_center"
+        android:background="#42474B" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_fragment_center" >
+
+        <RelativeLayout
+            android:id="@+id/home_fragment_profile_pic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/home_fragment_profile_pic_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/blank"
+                android:src="@drawable/profile_pic"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/home_fragment_profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/home_fragment_profile_pic_bg"
+                android:layout_alignLeft="@+id/home_fragment_profile_pic_bg"
+                android:layout_alignRight="@+id/home_fragment_profile_pic_bg"
+                android:layout_alignTop="@+id/home_fragment_profile_pic_bg"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/blank"
+                android:src="@drawable/profile_pic" />
+
+            <ProgressBar
+                android:id="@+id/home_fragment_profile_pic_loader"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/home_fragment_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_fragment_profile_pic_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:textColor="#F7F7F7"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_fragment_profile_name"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/home_fragment_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/leftslide_icon_phone"
+                android:drawablePadding="20dip"
+                android:textColor="#F7F7F7"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/home_fragment_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/leftslide_icon_email"
+                android:drawablePadding="20dip"
+                android:textColor="#F7F7F7"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/home_fragment_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/leftslide_icon_location"
+                android:drawablePadding="20dip"
+                android:textColor="#F7F7F7"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_fragment_edit_profile"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/home_fragment_subscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/leftslide_icon_subscription"
+            android:drawablePadding="20dip"
+            android:text="@string/subscription"
+            android:textColor="#F7F7F7"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/home_fragment_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/leftslide_icon_about"
+            android:drawablePadding="20dip"
+            android:text="@string/about"
+            android:textColor="#F7F7F7"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_fragment_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/leftslide_icon_warning"
+            android:drawablePadding="20dip"
+            android:text="@string/warning"
+            android:textColor="#F7F7F7"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_fragment_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/leftslide_icon_logout"
+            android:drawablePadding="20dip"
+            android:text="@string/logout"
+            android:textColor="#F7F7F7"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/home_fragment_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/butt_edit_selector" />
+
+</RelativeLayout>

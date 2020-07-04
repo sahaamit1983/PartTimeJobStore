@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_text_color">#656462</color>
+    <color name="sign_up_text_color">#006EDE</color>
+    <color name="home_text_color">#403F44</color>
+    <color name="black_color">#000000</color>
+    <color name="currency_color">#008000</color>
+</resources>

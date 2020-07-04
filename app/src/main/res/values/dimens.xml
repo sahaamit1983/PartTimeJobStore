@@ -1,0 +1,172 @@
+<resources>
+
+    <dimen name="shadow_width">0dip</dimen>
+    <dimen name="slidingmenu_offset">150dp</dimen>
+    
+    <!-- login -->
+    <dimen name="activity_login_header">18sp</dimen>
+    <dimen name="activity_login_header_padding_left">10dip</dimen>
+    <dimen name="activity_login">14sp</dimen>
+    <dimen name="activity_login_email_padding_bottom">5dip</dimen>
+    <dimen name="activity_login_password_padding_bottom">10dip</dimen>
+    <dimen name="activity_login_input_padding_left_right">5dip</dimen>
+    <dimen name="activity_login_input_drawable_padding_left">5dip</dimen>
+    <dimen name="activity_login_line_margin_top">20dip</dimen>
+    <dimen name="activity_login_sign_up_margin_top">20dip</dimen>
+    <dimen name="activity_login_choose_language_margin_bottom">30dip</dimen>
+    <dimen name="activity_login_choose_language_text_margin_bottom">10dip</dimen>
+    <dimen name="activity_login_choose_language_margin_left_right">20dip</dimen>
+
+    <!-- register -->
+    <dimen name="frag_register_body_padding_top">20dip</dimen>
+    <dimen name="frag_register_body_padding_bottom">20dip</dimen>
+    <dimen name="frag_register_header_padding_left">10dip</dimen>
+    <dimen name="frag_register_header">18sp</dimen>
+    <dimen name="frag_register_man_woman_padding_left">5dip</dimen>
+    <dimen name="frag_register">14sp</dimen>
+    <dimen name="frag_register_small_text">12sp</dimen>
+    <dimen name="frag_register_padding_left_right">5dip</dimen>
+    <dimen name="frag_register_padding_left_right_zero">0dip</dimen>
+    <dimen name="frag_register_email_margin_top">10dip</dimen>
+    <dimen name="frag_register_other_margin_top">5dip</dimen>
+    <dimen name="frag_register_input_padding_left_right">5dip</dimen>
+    <dimen name="frag_register_check_padding_top_bottom">20dip</dimen>
+    <dimen name="frag_register_about_me_padding_left">10dip</dimen>
+    <dimen name="frag_register_about_me_layout_padding_top">10dip</dimen>
+
+    <!-- my profile -->
+    <dimen name="frag_my_profile_header_padding_left_right_zero">0dip</dimen>
+    <dimen name="frag_my_profile_header_padding_left_right">5dip</dimen>
+    <dimen name="frag_my_profile_inner_layout_padding">10dip</dimen>
+    <dimen name="frag_my_profile_inner_layout_inner_padding">2dip</dimen>
+    <dimen name="frag_my_profile_text_padding">10dip</dimen>
+    <dimen name="frag_my_profile_text_size">14sp</dimen>
+    <dimen name="frag_my_profile_header">18sp</dimen>
+    <dimen name="frag_my_profile_header_padding">10dip</dimen>
+    <dimen name="frag_my_profile_about_her_text_size">18sp</dimen>
+    <dimen name="frag_my_profile_about_her_margin_top">10dip</dimen>
+    <dimen name="frag_my_profile_inner_layout_small_padding">5dip</dimen>
+    <dimen name="frag_my_profile_slide_image_margin">5dip</dimen>
+    <dimen name="frag_my_profile_smaller_text_size">12sp</dimen>
+    <dimen name="frag_my_profile_inner_text_padding">5dip</dimen>
+
+    <!-- advance search -->
+    <dimen name="frag_advance_search_header">18sp</dimen>
+    <dimen name="frag_advance_search_header_padding">10dip</dimen>
+    <dimen name="frag_advance_search_drawable_padding">5dip</dimen>
+    <dimen name="frag_advance_search_input_padding_left_right">5dip</dimen>
+    <dimen name="frag_advance_search_drawable_margin">10dip</dimen>
+    <dimen name="frag_advance_search">14sp</dimen>
+    <dimen name="frag_advance_search_small_text_size">12sp</dimen>
+    <dimen name="frag_advance_search_country_margin_top">10dip</dimen>
+    <dimen name="frag_advance_search_other_margin_top">5dip</dimen>
+    <dimen name="frag_advance_search_from_to_padding">2dip</dimen>
+    <dimen name="frag_advance_search_from_to_margin">10dip</dimen>
+    <dimen name="frag_advance_search_from_to_text_margin">5dip</dimen>
+
+    <!-- video call -->
+    <dimen name="frag_video_call_margin_left_right">5dip</dimen>
+    <dimen name="frag_video_call_chat_padding">3dip</dimen>
+    <dimen name="frag_video_call">14sp</dimen>
+    <dimen name="frag_video_call_margin_top">20dip</dimen>
+    <dimen name="frag_video_call_image_margin">2dip</dimen>
+
+    <!-- phone call -->
+    <dimen name="frag_phone_call_margin_left_right">5dip</dimen>
+    <dimen name="frag_phone_call_chat_padding">3dip</dimen>
+    <dimen name="frag_phone_call">14sp</dimen>
+    <dimen name="frag_phone_call_margin_top">20dip</dimen>
+    <dimen name="frag_phone_call_image_margin">2dip</dimen>
+    <dimen name="frag_video_phone_call_margin_top">20dip</dimen>
+
+    <!-- settings -->
+    <dimen name="frag_settings_header">18sp</dimen>
+    <dimen name="frag_settings_header_padding">10dip</dimen>
+    <dimen name="frag_settings_header_padding_left_right_zero">0dip</dimen>
+    <dimen name="frag_settings_header_padding_left_right">5dip</dimen>
+    <dimen name="frag_settings_body_left_padding">20dip</dimen>
+    <dimen name="frag_settings_body_drawable_left_padding">15dip</dimen>
+    <dimen name="frag_settings">14sp</dimen>
+    <dimen name="frag_settings_activate_deactivate_padding_left">40dip</dimen>
+    <dimen name="frag_settings_activate_deactivate_padding_right">20dip</dimen>
+    <dimen name="frag_settings_small_text_size">12sp</dimen>
+    <dimen name="frag_my_acciynt_left_right_padding">10dip</dimen>
+
+    <!-- message notification -->
+    <dimen name="frag_message_notification">14sp</dimen>
+    <dimen name="frag_message_notification_header">18sp</dimen>
+    <dimen name="frag_message_notification_header_padding">5dip</dimen>
+    <dimen name="frag_message_notification_small">12sp</dimen>
+    <dimen name="frag_message_notification_header_padding_left_right_zero">0dip</dimen>
+    <dimen name="frag_message_notification_header_padding_left_right">5dip</dimen>
+    <dimen name="frag_message_notification_small_text_size">12sp</dimen>
+
+    <!-- message notification inflater -->
+    <dimen name="infalter_frag_message_notification_padding">10dip</dimen>
+    <dimen name="infalter_frag_message_notification">14sp</dimen>
+    <dimen name="infalter_frag_message_notification_header">18sp</dimen>
+    <dimen name="infalter_frag_message_notification_margin">5dip</dimen>
+    <dimen name="infalter_frag_drawable_padding">10dip</dimen>
+
+    <!-- image view inflater -->
+    <dimen name="infalter_image_padding">10dip</dimen>
+    <dimen name="infalte_my_profile_image_padding">2dip</dimen>
+
+    <!-- search criteria inflater -->
+    <dimen name="fragment_information_image_padding">10dip</dimen>
+    <dimen name="fragment_information_image_text_margin">5dip</dimen>
+    <dimen name="fragment_information">14sp</dimen>
+    <dimen name="fragment_information_small_text_size">12sp</dimen>
+    <dimen name="fragment_information_header">18sp</dimen>
+    <dimen name="fragment_information_right_padding">10dip</dimen>
+
+    <!-- message receive -->
+    <dimen name="activity_message_receive_header_left_margin">20dip</dimen>
+    <dimen name="activity_message_receive_header_left_margin_video">40dip</dimen>
+    <dimen name="activity_message_receiver_chat_padding">3dip</dimen>
+    <dimen name="activity_message_receiver_margin_left_right">5dip</dimen>
+    <dimen name="activity_message_receiver_image_margin">2dip</dimen>
+    <dimen name="activity_message_receiver">14sp</dimen>
+    <dimen name="activity_message_receiver_header">18sp</dimen>
+    <dimen name="activity_message_receiver_small_text">12sp</dimen>
+    <dimen name="activity_message_receiver_margin_bottom">2dip</dimen>
+    <dimen name="activity_message_receiver_margin_bottom_sms">5dip</dimen>
+    <dimen name="activity_message_receiver_popup_bottom_msg_margin">10dip</dimen>
+    <dimen name="activity_message_receiver_popup_bottom_msg_padding">2dip</dimen>
+    <dimen name="activity_message_receiver_popup_bottom_calender_margin">5dip</dimen>
+    <dimen name="activity_message_receiver_cal_padding_top_bottom">10dip</dimen>
+
+    <!-- message notification inflater -->
+    <dimen name="infalter_frag_message_receive_margin">5dip</dimen>
+    <dimen name="infalter_frag_message_receive_padding">10dip</dimen>
+
+    <!-- result screen thumb -->
+    <dimen name="frag_result_screeen_chat_margin">10dip</dimen>
+    <dimen name="frag_result_screeen_counter_margin">20dip</dimen>
+    <dimen name="frag_result_screeen_text_size">20sp</dimen>
+    <dimen name="frag_result_screeen_text_padding_left">30dip</dimen>
+    <dimen name="frag_result_screeen_text_padding_right">10dip</dimen>
+
+    <!-- inflate result screen thumb -->
+    <dimen name="inflate_frag_result_screeen_text_size">10sp</dimen>
+    <dimen name="inflate_frag_result_screeen_text_padding_left">5dip</dimen>
+    <dimen name="inflate_frag_result_screeen_text_padding_right">2dip</dimen>
+    <dimen name="inflate_frag_result_screeen_counter_margin">10dip</dimen>
+    <dimen name="inflate_frag_result_name_margin_left">15dip</dimen>
+    <dimen name="inflate_frag_result_age_margin_left">20dip</dimen>
+
+    <!-- my workspace -->
+    <dimen name="frag_my_workspace">14sp</dimen>
+    <dimen name="frag_my_workspace_header">18sp</dimen>
+    <dimen name="frag_my_workspace_header_margin_left">20dip</dimen>
+    <dimen name="frag_my_workspace_margin_bottom">2dip</dimen>
+
+    <!-- my radar -->
+    <dimen name="frag_my_radar_header_padding_left_right">5dip</dimen>
+    <dimen name="frag_my_radar_header_padding_left_right_zero">0dip</dimen>
+    <dimen name="frag_my_radar_header_padding">10dip</dimen>
+    <dimen name="frag_my_radar_header">18sp</dimen>
+    <dimen name="frag_my_radar_small_text_size">12sp</dimen>
+    <dimen name="frag_my_radar_bottom_padding">10dip</dimen>
+
+</resources>

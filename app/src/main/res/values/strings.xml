@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Part Time Job Store</string>
+    <string name="action_settings">Settings</string>
+    <string name="blank"></string>
+    <string name="login">Login</string>
+    <string name="email_id">Email id</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="not_a_member">Not a member ?</string>
+    <string name="signup_now">Sign Up Now</string>
+    <string name="repassword">Re-Password</string>
+    <string name="register">REGISTER</string>
+    <string name="submit">Submit</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of birth</string>
+    <string name="sex">Sex</string>
+    <string name="ph_number">Phone number</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camear</string>
+    <string name="date_picker_dialog_title">Set date</string>
+    <string name="date_time_set">Set</string>
+    <string name="date_time_cancel">Cancel</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pin">Pin code (Zip code)</string>
+    <string name="pin_optional">Pin code (Zip code): - Optional</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_mismatch_password">Password not matching</string>
+    <string name="submit_your_job">Submit Your Job</string>
+    <string name="search_job">Search Job</string>
+    <string name="history">History</string>
+    <string name="edit_job_list">EDIT JOB LIST</string>
+    <string name="warning">Warning</string>
+    <string name="job_type">Job Type</string>
+    <string name="job_description">Job Description</string>
+    <string name="amount">Amount</string>
+    <string name="amount_details">Amount : </string>
+    <string name="submit_job">Submit Job</string>
+    <string name="job_location">Job Location</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="subscription">Subscription</string>
+    <string name="post_your_job">POST YOUR JOB </string>
+    <string name="edit_your_job">EDIT YOUR JOB </string>
+    <string name="edit_profile_header">EDIT PROFILE</string>
+    <string name="list_of_jobs">List of Jobs</string>
+    <string name="job_search">Job Search</string>
+    <string name="search">Search</string>
+    <string name="date">Date</string>
+    <string name="job_details">Job Details</string>
+    <string name="chat">Chat</string>
+    <string name="send">Send</string>
+    <string name="sub_msg">You are not a subscribed user</string>
+    <string name="wait_msg">Your purchased item is saving to our database. \nDo not clean your app data from application manager.</string>
+    <string name="map">Map</string>
+    <string name="edit_job">Edit Job</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="no_job_found">No jobs found at your search criteria</string>
+    <string name="no_history_job_found">No jobs found in your history. \nYou did not post any job.</string>
+    <string name="no_job">No jobs found</string>
+    
+    <string name="warning_message">THE COMPANY SHALL IN NO EVENT BE LIABLE FOR ANY DIRECT OR INDIRECT OR CONSEQUENTIAL OR DAMAGES OF ANY KIND OF ANY CAUSE.</string>
+    <string name="about_message">Email : sas.techno.pvt.ltd@gmail.com. \n State : West Bengal. \n Country : India.</string>
+    
+</resources>

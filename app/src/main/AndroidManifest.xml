@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LockedOrientationActivity"
+    package="sas.part.time.job">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="sas.part.time.job.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.Registration"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.SearchJob"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.SubmitJob"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.EditProfile"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.JobList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.JobDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.Subscription"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.History"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.MapViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.EditList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.EditJob"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sas.part.time.job.activity.WarningAbout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+
+        <service
+            android:name="sas.part.time.job.service.InAppDataService"
+            android:exported="false" >
+        </service>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/map_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

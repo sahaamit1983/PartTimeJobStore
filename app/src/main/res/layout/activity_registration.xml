@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg1"
+    tools:context=".activity.Registration" >
+
+    <ScrollView
+        android:id="@+id/registration_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topbar2"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/blank"
+                android:src="@drawable/gray_bar"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/registration_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_text_field_green"
+                android:gravity="center_vertical"
+                android:hint="@string/first_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="60"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_blue"
+                android:gravity="center_vertical"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="60"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_ph_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_pink"
+                android:gravity="center_vertical"
+                android:hint="@string/ph_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="20"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_yellow"
+                android:gravity="center_vertical"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_green"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_blue"
+                android:gravity="center_vertical"
+                android:hint="@string/repassword"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/registration_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_pink"
+                android:gravity="center_vertical"
+                android:hint="@string/dob"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/registration_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_yellow"
+                android:gravity="center_vertical"
+                android:hint="@string/sex"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_address_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_large_blue"
+                android:gravity="top|left"
+                android:hint="@string/address"
+                android:inputType="textMultiLine"
+                android:maxLength="60"
+                android:padding="5dip"
+                android:singleLine="false"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/registration_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_yellow"
+                android:gravity="center_vertical"
+                android:hint="@string/country"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/registration_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_pink"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:hint="@string/state"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/registration_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_green"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:hint="@string/city"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/form_text_field_blue"
+                android:gravity="center_vertical"
+                android:hint="@string/pin"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/butt_bottom"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/reg_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar2"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/registration_top_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_top_bar"
+        android:background="@drawable/gray_bar" >
+
+        <ImageView
+            android:id="@+id/registration_pic_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/blank"
+            android:src="@drawable/reg_image_frame" />
+
+        <ImageView
+            android:id="@+id/registration_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/registration_pic_bg"
+            android:layout_alignLeft="@+id/registration_pic_bg"
+            android:layout_alignRight="@+id/registration_pic_bg"
+            android:layout_alignTop="@+id/registration_pic_bg"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+            android:contentDescription="@string/blank"
+            android:src="@drawable/reg_image_default" />
+
+        <Button
+            android:id="@+id/registration_pic_from_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/butt_camera_selector" />
+
+        <Button
+            android:id="@+id/registration_pic_from_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/registration_pic_from_camera"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/butt_gallery_selector" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registration_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/butt_bottom"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

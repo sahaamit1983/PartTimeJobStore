@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="sign_up_bg" type="color">#6766cc</item>
+    <item name="my_profile_bg" type="color">#8a88db</item>
+    <item name="my_workspace_bg" type="color">#8a88db</item>
+    <item name="call_bg" type="color">#444355</item>
+    <item name="settings_bg" type="color">#c7c6d0</item>
+    <item name="settings_text_color" type="color">#48484e</item>
+    <item name="message_receiver_bg_bg" type="color">#6766CC</item>
+    <item name="big_image_bg" type="color">#1E1E36</item>
+    <item name="my_workspace_header" type="color">#2A2965</item>
+    <item name="msg_listing_bg" type="color">#D4B035</item>
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+
+</resources>
