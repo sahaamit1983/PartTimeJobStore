@@ -10,12 +10,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.google.android.gms.ads.AdView;
-
 public class SplashScreen extends Activity {
 
 	private final int SPLASH_DURATION = 2*1000; // 1000 is 1 second
-	private AdView mAdView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +28,6 @@ public class SplashScreen extends Activity {
 		}
 
 		PartTimeUtils.getSingleInstance().setUTCFormat();
-		mAdView = (AdView) this.findViewById(R.id.splash_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
 
 		Handler handler = new Handler();
 		handler.postDelayed(new Runnable() {
@@ -45,29 +40,5 @@ public class SplashScreen extends Activity {
 			}
 
 		},SPLASH_DURATION);
-	}
-
-	@Override
-	public void onPause() {
-		if (mAdView != null) {
-			mAdView.pause();
-		}
-		super.onPause();
-	}
-
-	@Override
-	public void onResume() {
-		super.onResume();
-		if (mAdView != null) {
-			mAdView.resume();
-		}
-	}
-
-	@Override
-	public void onDestroy() {
-		if (mAdView != null) {
-			mAdView.destroy();
-		}
-		super.onDestroy();
 	}
 }

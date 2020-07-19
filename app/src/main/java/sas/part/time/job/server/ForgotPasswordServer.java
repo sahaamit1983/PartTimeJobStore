@@ -1,16 +1,9 @@
 package sas.part.time.job.server;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.SasLogoDialog;
-import sas.part.time.job.json.JSONParser;
 import sas.part.time.job.utils.PartTimeMessage;
 import android.app.Activity;
 import android.os.AsyncTask;
@@ -50,7 +43,7 @@ public class ForgotPasswordServer extends AsyncTask<Void, Void, String> {
 
 		String data = new String();
 
-		try { 
+		/*try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("email_id", EmailId));
 			
@@ -67,7 +60,7 @@ public class ForgotPasswordServer extends AsyncTask<Void, Void, String> {
 		} catch (Exception e) {
 			data = appMessage.getErrorMessage();
 			e.printStackTrace();
-		} 
+		} */
 
 		return data;
 	} 

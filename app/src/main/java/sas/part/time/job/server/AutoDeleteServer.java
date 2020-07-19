@@ -1,14 +1,6 @@
 package sas.part.time.job.server;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
-
 import sas.part.time.job.R;
-import sas.part.time.job.json.JSONParser;
 import sas.part.time.job.preference.UserInfo;
 import android.app.Activity;
 
@@ -35,13 +27,13 @@ public class AutoDeleteServer extends Thread {
 		String mUserId = info.getUserId(mActivity);
 
 		try { 
-			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			/*List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("user_id", mUserId));
 			
 			UrlEncodedFormEntity requestEntity = new UrlEncodedFormEntity(nameValuePairs);
 
 			JSONParser jParser = new JSONParser();
-			jParser.getJSONFromUrl(URL,requestEntity);
+			jParser.getJSONFromUrl(URL,requestEntity);*/
 			
 		} catch (Exception e) {
 			e.printStackTrace();

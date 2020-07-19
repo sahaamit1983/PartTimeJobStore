@@ -9,8 +9,9 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 public class InAppDataService extends Service implements IPurchaseData {
 

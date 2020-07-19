@@ -2,15 +2,10 @@ package sas.part.time.job.server;
 
 import java.io.File;
 
-import org.apache.http.entity.mime.HttpMultipartMode;
-import org.apache.http.entity.mime.MultipartEntity;
-import org.apache.http.entity.mime.content.FileBody;
-import org.apache.http.entity.mime.content.StringBody;
 import org.json.JSONObject;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.SasLogoDialog;
-import sas.part.time.job.json.JSONParserFile;
 import sas.part.time.job.pojo.ResultMsg;
 import sas.part.time.job.preference.UserInfo;
 import sas.part.time.job.userInterface.IRegistration;
@@ -89,7 +84,7 @@ public class EditProfileServer extends AsyncTask<Void, Void, ResultMsg> {
 		String mUserId = info.getUserId(mActivity);
 		ResultMsg data = new ResultMsg();
 		
-		try {
+		/*try {
 			MultipartEntity entity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
 			
 			entity.addPart("user_id", new StringBody(mUserId));
@@ -131,7 +126,7 @@ public class EditProfileServer extends AsyncTask<Void, Void, ResultMsg> {
 			data.setResult(false);
 			data.setMessage(appMessage.getErrorMessage());
 			e.printStackTrace();
-		}
+		}*/
 		return data;
 	}
 }

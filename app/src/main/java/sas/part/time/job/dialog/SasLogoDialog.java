@@ -15,7 +15,7 @@ import android.widget.LinearLayout.LayoutParams;
 
 public class SasLogoDialog extends Dialog {
 
-	private ImageView imageFlip,imageCricle;
+	private ImageView imageFlip, imageCricle;
 	private Handler	AnimHandler1 = new Handler();
 	private final int Time = 500;
 	private final int Time2 = 2000;
@@ -55,8 +55,8 @@ public class SasLogoDialog extends Dialog {
 	
 	private void initialize() {
 		
-		imageCricle = (ImageView) findViewById(R.id.image_circle);
-		imageFlip 	= (ImageView) findViewById(R.id.image_flipper);
+		imageCricle = findViewById(R.id.image_circle);
+		imageFlip 	= findViewById(R.id.image_flipper);
 	}
 	
 	private class Runnable1 implements Runnable {

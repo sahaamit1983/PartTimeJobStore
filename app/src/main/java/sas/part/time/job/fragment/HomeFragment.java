@@ -16,9 +16,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
+import androidx.fragment.app.Fragment;
 
-public class HomeFragment extends SherlockFragment {
+
+public class HomeFragment extends Fragment {
 
 	private IHomeCallBack CallBack;
 	private TextView Name, PhoneNumber, Email, Address;
@@ -36,7 +37,7 @@ public class HomeFragment extends SherlockFragment {
 		initView(rootView);
 		listener(rootView);
 		
-		CallBack = (IHomeCallBack)getSherlockActivity();
+		//CallBack = (IHomeCallBack)getSherlockActivity();
 	
 		rootView.setOnTouchListener(new View.OnTouchListener() {
 	        @SuppressLint("ClickableViewAccessibility")

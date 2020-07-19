@@ -2,8 +2,6 @@ package sas.part.time.job.activity;
 
 import java.util.ArrayList;
 
-import com.google.android.gms.ads.AdView;
-
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.DialogCity;
 import sas.part.time.job.dialog.DialogCountry;
@@ -30,7 +28,7 @@ public class SearchJob extends Activity  {
 	private ArrayList<String>	CityList = new ArrayList<String>();
 	private PartTimeUtils 		appConfig = PartTimeUtils.getSingleInstance();
 	private DialogCountry 		dialog = null;
-	private AdView 				mAdView;
+	//private AdView 				mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +53,8 @@ public class SearchJob extends Activity  {
 		City 	= (Button)findViewById(R.id.search_job_city);
 		Back 	= (Button)findViewById(R.id.search_job_back);
 		Pin 	= (EditText)findViewById(R.id.search_job_pincode);
-		mAdView = (AdView) this.findViewById(R.id.search_job_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView = (AdView) this.findViewById(R.id.search_job_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 
 	private void listener() {
@@ -261,7 +259,7 @@ public class SearchJob extends Activity  {
 		dialog.show();
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -283,5 +281,5 @@ public class SearchJob extends Activity  {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

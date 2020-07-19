@@ -1,17 +1,11 @@
 package sas.part.time.job.server;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.SasLogoDialog;
-import sas.part.time.job.json.JSONParser;
 import sas.part.time.job.pojo.JobData;
 import sas.part.time.job.pojo.JobDataList;
 import sas.part.time.job.preference.UserInfo;
@@ -61,7 +55,7 @@ public class HistoryServer extends AsyncTask<Void, Void, JobDataList> {
 		JobDataList list = new JobDataList();
 		ArrayList<JobData> JobList = new ArrayList<JobData>();;
 
-		try { 
+		/*try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("user_id", mUserId));
 			nameValuePairs.add(new BasicNameValuePair("job_status", String.valueOf(mJobStatus)));
@@ -135,7 +129,7 @@ public class HistoryServer extends AsyncTask<Void, Void, JobDataList> {
 			list.setException(true);
 			list.setMessage(appMessage.getErrorMessage());
 			e.printStackTrace();
-		} 
+		}*/
 		
 		list.setJobList(JobList);
 

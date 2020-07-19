@@ -1,9 +1,6 @@
 package sas.part.time.job.activity;
 
 import java.util.ArrayList;
-import java.util.Collections;
-
-import com.google.android.gms.ads.AdView;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.UserAlertDialog;
@@ -32,7 +29,7 @@ public class JobList extends Activity implements IJobList {
 	private PartTimeMessage 	appMessage = PartTimeMessage.getSingleInstance();
 	private String Subscription = "";
 	private ArrayList<JobData> List = new ArrayList<JobData>();
-	private AdView mAdView;
+	//private AdView mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -63,13 +60,12 @@ public class JobList extends Activity implements IJobList {
 	}
 
 	private void initView() {
-
 		JobListView = (ListView)findViewById(R.id.search_job_list_view);
 		NoJob 		= (TextView)findViewById(R.id.search_job_list_message);
 		Back		= (Button)findViewById(R.id.search_job_list_back);
 		Map			= (Button)findViewById(R.id.search_job_list_map);
-		mAdView 	= (AdView) this.findViewById(R.id.search_job_list_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView 	= (AdView) this.findViewById(R.id.search_job_list_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 	private void listener() {
 
@@ -125,7 +121,7 @@ public class JobList extends Activity implements IJobList {
 				JobListView.setVisibility(View.VISIBLE);
 
 				List = data.getJobList();
-				Collections.sort(List, appConfig.new JobDataSortByDate());
+				//Collections.sort(List, appConfig.new JobDataSortByDate());
 				JobSearchList baseAdapter = new JobSearchList(JobList.this, List);
 				JobListView.setAdapter(baseAdapter);
 
@@ -152,7 +148,7 @@ public class JobList extends Activity implements IJobList {
 		}
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -174,5 +170,5 @@ public class JobList extends Activity implements IJobList {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "258280116339",
+    "firebase_url": "https://part-time-job-store.firebaseio.com",
+    "project_id": "part-time-job-store",
+    "storage_bucket": "part-time-job-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258280116339:android:fda2a5c6a551fd19335a06",
+        "android_client_info": {
+          "package_name": "sas.part.time.job"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258280116339-ncefeg3l8vfqcefuc66rov9ohb7s4un0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sas.part.time.job",
+            "certificate_hash": "e25d931be45e8dab2bb5e6077469ccc50e95397d"
+          }
+        },
+        {
+          "client_id": "258280116339-10s70kd85srv5gucqb144jdm9aktjm8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5EUfPaTqS9V0XFYuBdWZPP8Hc7ERgP9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258280116339-10s70kd85srv5gucqb144jdm9aktjm8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

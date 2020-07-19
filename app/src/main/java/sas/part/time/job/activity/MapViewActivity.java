@@ -13,36 +13,37 @@ import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
-import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+
 public class MapViewActivity extends FragmentActivity {
 
-	private GoogleMap 					googleMap;
+	private GoogleMap googleMap;
 	private LocationManager 			locationManager;
 	private Button 						Back;
-	private ArrayList<JobData> 			List = new ArrayList<JobData>();
-	private HashMap<LatLng, JobData> 	mapList = new HashMap<LatLng, JobData>();
+	private ArrayList<JobData> 			List = new ArrayList<>();
+	private HashMap<LatLng, JobData> 	mapList = new HashMap<>();
 	private PartTimeMessage 			appMessage = PartTimeMessage.getSingleInstance();
 	private String 						Subscription = "";
-	private AdView 						mAdView;
+	//private AdView 						mAdView;
 	
 	@SuppressWarnings("unchecked")
 	@Override
@@ -56,14 +57,13 @@ public class MapViewActivity extends FragmentActivity {
 		
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		if (locationManager != null) {
-			Location location = locationManager.getLastKnownLocation(
-					LocationManager.NETWORK_PROVIDER);
+			/*Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 			if(location==null) {
 				location = locationManager.getLastKnownLocation(
 						LocationManager.GPS_PROVIDER);
-			}
+			}*/
 
-			if(location!=null) {
+			if(true) { //location!=null
 
 				List = (ArrayList<JobData>)getIntent().getSerializableExtra("Map");
 				for(int i=0;i<List.size();i++) {
@@ -82,8 +82,7 @@ public class MapViewActivity extends FragmentActivity {
 
 					mapList.put(latLng, List.get(i));
 					if(i==0)
-						googleMap.moveCamera(CameraUpdateFactory.
-								newLatLngZoom(latLng, 13));
+						googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 13));
 				}
 				googleMap.animateCamera(CameraUpdateFactory.zoomTo(13), 2000, null);
 			} else {
@@ -102,11 +101,11 @@ public class MapViewActivity extends FragmentActivity {
 	private void initView() {
 
 		Back = (Button)findViewById(R.id.map_back);
-		mAdView = (AdView) this.findViewById(R.id.map_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView = (AdView) this.findViewById(R.id.map_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 		SupportMapFragment fm = (SupportMapFragment) getSupportFragmentManager().
 				findFragmentById(R.id.map_show);
-		googleMap = fm.getMap();
+		fm.getMapAsync(null);
 	}
 
 	private void listener() {
@@ -118,7 +117,7 @@ public class MapViewActivity extends FragmentActivity {
 				finish();
 			}
 		});
-		googleMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+		googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
 
 			@Override
 			public void onInfoWindowClick(Marker arg0) {
@@ -131,7 +130,7 @@ public class MapViewActivity extends FragmentActivity {
 				finish();
 			}
 		});
-		googleMap.setInfoWindowAdapter(new InfoWindowAdapter() {
+		googleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
 
 			// Use default InfoWindow frame
 			@Override
@@ -188,9 +187,9 @@ public class MapViewActivity extends FragmentActivity {
 
 	@Override
 	protected void onDestroy() {
-		if (mAdView != null) {
+		/*if (mAdView != null) {
 			mAdView.destroy();
-		}
+		}*/
 		super.onDestroy();
 		mapList.clear();
 		List.clear();
@@ -205,7 +204,7 @@ public class MapViewActivity extends FragmentActivity {
 		}
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -219,5 +218,5 @@ public class MapViewActivity extends FragmentActivity {
 		if (mAdView != null) {
 			mAdView.resume();
 		}
-	}
+	}*/
 }

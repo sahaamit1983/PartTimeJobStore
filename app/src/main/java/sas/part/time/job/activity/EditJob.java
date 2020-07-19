@@ -28,6 +28,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//import com.google.android.gms.ads.AdView;
+
 public class EditJob extends Activity implements IJobSubmit {
 
 	private Button 				Submit, Back;
@@ -50,7 +52,7 @@ public class EditJob extends Activity implements IJobSubmit {
 	private ArrayList<String>	CityList = new ArrayList<>();
 	private PartTimeUtils 		appConfig = PartTimeUtils.getSingleInstance();
 	private JobData 			data;
-	private AdView 				mAdView;
+	//private AdView mAdView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -97,8 +99,8 @@ public class EditJob extends Activity implements IJobSubmit {
 		Pin				= (EditText)findViewById(R.id.submit_pincode);
 		Address			= (EditText)findViewById(R.id.submit_address);
 		SC 				= (ScrollView)findViewById(R.id.submit_scroll);
-		mAdView 		= (AdView) findViewById(R.id.submit_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView 		= (AdView) findViewById(R.id.submit_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 
 	private void listener() {
@@ -395,7 +397,7 @@ public class EditJob extends Activity implements IJobSubmit {
 		dialog.show();
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -417,5 +419,5 @@ public class EditJob extends Activity implements IJobSubmit {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

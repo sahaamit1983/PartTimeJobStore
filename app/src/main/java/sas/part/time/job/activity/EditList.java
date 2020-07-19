@@ -1,9 +1,6 @@
 package sas.part.time.job.activity;
 
 import java.util.ArrayList;
-import java.util.Collections;
-
-import com.google.android.gms.ads.AdView;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.UserAlertDialog;
@@ -37,7 +34,7 @@ public class EditList extends Activity implements IJobList, IDelete {
 	private ArrayList<JobData> List = new ArrayList<JobData>();
 	private EditJobList baseAdapter;
 	private final int REQUEST_CODE = 103;
-	private AdView 				mAdView;
+	//private AdView 				mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +69,8 @@ public class EditList extends Activity implements IJobList, IDelete {
 		Back		= (Button)findViewById(R.id.history_back);
 		NoJob 		= (TextView)findViewById(R.id.history_message);
 		Title		= (TextView)findViewById(R.id.history_title);
-		mAdView 	= (AdView) findViewById(R.id.history_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView 	= (AdView) findViewById(R.id.history_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 	private void listener() {
 
@@ -132,7 +129,7 @@ public class EditList extends Activity implements IJobList, IDelete {
 				JobListView.setVisibility(View.VISIBLE);
 
 				List = data.getJobList();
-				Collections.sort(List, appConfig.new JobDataSortByDate());
+				//Collections.sort(List, appConfig.new JobDataSortByDate());
 				baseAdapter.setList(List);
 				baseAdapter.NotifyDatasetChanged();
 
@@ -180,9 +177,9 @@ public class EditList extends Activity implements IJobList, IDelete {
 
 	@Override
 	protected void onDestroy() {
-		if (mAdView != null) {
+		/*if (mAdView != null) {
 			mAdView.destroy();
-		}
+		}*/
 		super.onDestroy();
 
 		if(List!=null) {
@@ -190,7 +187,7 @@ public class EditList extends Activity implements IJobList, IDelete {
 		}
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -204,5 +201,5 @@ public class EditList extends Activity implements IJobList, IDelete {
 		if (mAdView != null) {
 			mAdView.resume();
 		}
-	}
+	}*/
 }

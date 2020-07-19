@@ -4,13 +4,31 @@
     tools:ignore="LockedOrientationActivity"
     package="sas.part.time.job">
 
+    <permission
+        android:name="sas.part.time.job.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="sas.part.time.job.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q">
         <activity
             android:name="sas.part.time.job.activity.SplashScreen"
             android:label="@string/app_name"
@@ -79,13 +97,6 @@
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
         </activity>
         <activity
-            android:name="sas.part.time.job.activity.Subscription"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
-        </activity>
-        <activity
             android:name="sas.part.time.job.activity.History"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -132,10 +143,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
     </application>
 
 </manifest>

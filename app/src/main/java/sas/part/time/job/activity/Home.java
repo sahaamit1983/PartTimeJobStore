@@ -8,6 +8,8 @@ import sas.part.time.job.service.InAppDataService;
 import sas.part.time.job.userInterface.IHomeCallBack;
 import sas.part.time.job.userPreference.AutoDeletePref;
 import sas.part.time.job.utils.PartTimeUtils;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,19 +18,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.google.android.gms.ads.AdView;
-import com.slidingmenu.lib.SlidingMenu;
+//import com.actionbarsherlock.app.SherlockFragmentActivity;
+//import com.google.android.gms.ads.AdView;
+//import com.slidingmenu.lib.SlidingMenu;
 
-public class Home extends SherlockFragmentActivity implements IHomeCallBack {
+public class Home extends Activity implements IHomeCallBack {
 
 	private ScrollView SC;
 	private Button SubmitJob, SearchJob;
 	private Button History, EditJob, Slider;
-	private SlidingMenu menu;
+	//private SlidingMenu menu;
 	private PartTimeUtils affConfig = PartTimeUtils.getSingleInstance();
 	private final int REQUEST_CODE = 102;
-	private AdView mAdView;
+	//private AdView mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +58,8 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 		History 		= (Button)findViewById(R.id.home_history);
 		EditJob 		= (Button)findViewById(R.id.home_edit_job);
 		Slider			= (Button)findViewById(R.id.home_slider);
-		mAdView 		= (AdView) this.findViewById(R.id.home_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView 		= (AdView) this.findViewById(R.id.home_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 
 	private void listener() {
@@ -98,13 +100,13 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 				startActivity(i);
 			}
 		});
-		Slider.setOnClickListener(new View.OnClickListener() {
+		/*Slider.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View view) {
 				menu.toggle();
 			}
-		});
+		});*/
 	}
 
 	private void SlidingMethod() {		
@@ -112,7 +114,7 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 		getWindowManager().getDefaultDisplay().getMetrics(metrics);
 		int width = metrics.widthPixels;
 		width = (int)((width *15)/100); // 15 percent
-		menu = new SlidingMenu(Home.this);
+		/*menu = new SlidingMenu(Home.this);
 		menu.setMode(SlidingMenu.LEFT);
 		menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
 		menu.setShadowWidthRes(R.dimen.shadow_width);
@@ -121,7 +123,7 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 		menu.setFadeDegree(0.35f); 
 		menu.attachToActivity(Home.this,SlidingMenu.SLIDING_CONTENT); 
 		menu.setMenu(R.layout.fragment_home_menu);
-		menu.setSlidingEnabled(true);
+		menu.setSlidingEnabled(true);*/
 	}
 
 	@Override
@@ -140,8 +142,8 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 
 		case SUBSCRIPTION: 
 
-			i = new Intent(Home.this, Subscription.class);
-			startActivity(i);
+			/*i = new Intent(Home.this, Subscription.class);
+			startActivity(i);*/
 
 			break;
 
@@ -177,7 +179,7 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 
 		@Override
 		public void run() {
-			menu.toggle();
+			//menu.toggle();
 		}
 	};
 
@@ -238,7 +240,7 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 		}
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -260,5 +262,5 @@ public class Home extends SherlockFragmentActivity implements IHomeCallBack {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

@@ -1,16 +1,10 @@
 package sas.part.time.job.server;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
 import sas.part.time.job.R;
 import sas.part.time.job.database.DatabaseInAppHandler;
-import sas.part.time.job.json.JSONParser;
 import sas.part.time.job.pojo.InAppData;
 import sas.part.time.job.pojo.SubscriptionMsg;
 import sas.part.time.job.preference.UserInfo;
@@ -68,7 +62,7 @@ public class PurchasedServer extends Thread {
 		UserInfo info = new UserInfo();
 		String mUserId = info.getUserId(mContext);
 
-		try { 
+		/*try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("user_id", mUserId));
 			nameValuePairs.add(new BasicNameValuePair("orderId", pData.getORDER_ID()));
@@ -93,7 +87,7 @@ public class PurchasedServer extends Thread {
 			data.setException(true);
 			data.setResult(false);
 			e.printStackTrace();
-		}
+		}*/
 		
 		return data;
 	} 

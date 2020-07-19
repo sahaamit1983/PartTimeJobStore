@@ -24,7 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.google.android.gms.ads.AdView;
+//import com.google.android.gms.ads.AdView;
 
 public class Login extends Activity implements ILogin {
 
@@ -34,7 +34,7 @@ public class Login extends Activity implements ILogin {
 	private PartTimeUtils 		appConfig = PartTimeUtils.getSingleInstance();
 	private PartTimeMessage 	appMessage = PartTimeMessage.getSingleInstance();
 	private ToggleButton		RememberPass;
-	private AdView 				mAdView;
+	//private AdView 				mAdView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class Login extends Activity implements ILogin {
 			RememberPass.setChecked(true);
 		}
 		Password.setTransformationMethod(new AsteriskPasswordTransformationMethod());
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		//mAdView.loadAd(PartTimeUtils.getAdRequest());
 		//Username.setText("saha.amit1983@gmail.com");
 		//Password.setText("12345678");
 		
@@ -65,7 +65,7 @@ public class Login extends Activity implements ILogin {
 		Username 		= (EditText)findViewById(R.id.login_username);
 		Password 		= (EditText)findViewById(R.id.login_password);
 		RememberPass  	= (ToggleButton)findViewById(R.id.login_toggle_on_off);
-		mAdView 		= (AdView) findViewById(R.id.login_adView);
+		//mAdView 		= (AdView) findViewById(R.id.login_adView);
 	}
 
 	private void listener() {
@@ -186,7 +186,7 @@ public class Login extends Activity implements ILogin {
 		dialog.show();
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -208,5 +208,5 @@ public class Login extends Activity implements ILogin {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

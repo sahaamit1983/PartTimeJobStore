@@ -2,8 +2,6 @@ package sas.part.time.job.activity;
 
 import java.util.ArrayList;
 
-import com.google.android.gms.ads.AdView;
-
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.DialogCity;
 import sas.part.time.job.dialog.DialogCountry;
@@ -48,7 +46,7 @@ public class SubmitJob extends Activity implements IJobSubmit {
 	private ArrayList<Zone>		ZoneList = new ArrayList<Zone>();
 	private ArrayList<String>	CityList = new ArrayList<String>();
 	private PartTimeUtils 		appConfig = PartTimeUtils.getSingleInstance();
-	private AdView 				mAdView;
+	//private AdView 				mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +78,8 @@ public class SubmitJob extends Activity implements IJobSubmit {
 		Address			= (EditText)findViewById(R.id.submit_address);
 		SC 				= (ScrollView)findViewById(R.id.submit_scroll);
 		CurrencyCode	= (TextView)findViewById(R.id.submit_currency);
-		mAdView 		= (AdView) this.findViewById(R.id.submit_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView 		= (AdView) this.findViewById(R.id.submit_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 
 	private void listener() {
@@ -347,7 +345,7 @@ public class SubmitJob extends Activity implements IJobSubmit {
 		dialog.show();
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -369,5 +367,5 @@ public class SubmitJob extends Activity implements IJobSubmit {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

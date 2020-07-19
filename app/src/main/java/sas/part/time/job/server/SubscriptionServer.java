@@ -1,16 +1,9 @@
 package sas.part.time.job.server;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.SasLogoDialog;
-import sas.part.time.job.json.JSONParser;
 import sas.part.time.job.pojo.SubscriptionMsg;
 import sas.part.time.job.preference.UserInfo;
 import sas.part.time.job.userInterface.ISubscription;
@@ -55,7 +48,7 @@ public class SubscriptionServer extends AsyncTask<Void, Void, SubscriptionMsg> {
 		UserInfo info = new UserInfo();
 		String mUserId = info.getUserId(mActivity);
 
-		try { 
+		/*try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("user_id", mUserId));
 
@@ -77,7 +70,7 @@ public class SubscriptionServer extends AsyncTask<Void, Void, SubscriptionMsg> {
 			data.setException(true);
 			data.setResult(false);
 			e.printStackTrace();
-		} 
+		} */
 
 		return data;
 	} 

@@ -2,8 +2,6 @@ package sas.part.time.job.activity;
 
 import java.util.ArrayList;
 
-import com.google.android.gms.ads.AdView;
-
 import sas.part.time.job.R;
 import sas.part.time.job.pojo.JobData;
 import sas.part.time.job.utils.PartTimeUtils;
@@ -23,7 +21,7 @@ public class JobDetails extends Activity {
 	private JobData data;
 	private PartTimeUtils appConfig = PartTimeUtils.getSingleInstance();
 	private String Subscription = "";
-	private AdView mAdView;
+	//private AdView mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +55,8 @@ public class JobDetails extends Activity {
 		Date		= (TextView)findViewById(R.id.job_details_date);
 		PhoneNumber	= (TextView)findViewById(R.id.job_details_phoneno);
 		Address		= (TextView)findViewById(R.id.job_details_address);
-		mAdView 	= (AdView) this.findViewById(R.id.job_details_adView);
-		mAdView.loadAd(PartTimeUtils.getAdRequest());
+		/*mAdView 	= (AdView) this.findViewById(R.id.job_details_adView);
+		mAdView.loadAd(PartTimeUtils.getAdRequest());*/
 	}
 
 	private void listener() {
@@ -123,7 +121,7 @@ public class JobDetails extends Activity {
 		Address.setText(address);
 	}
 	
-	@Override
+	/*@Override
 	public void onPause() {
 		if (mAdView != null) {
 			mAdView.pause();
@@ -145,5 +143,5 @@ public class JobDetails extends Activity {
 			mAdView.destroy();
 		}
 		super.onDestroy();
-	}
+	}*/
 }

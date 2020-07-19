@@ -1,17 +1,10 @@
 package sas.part.time.job.server;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import sas.part.time.job.R;
 import sas.part.time.job.dialog.SasLogoDialog;
-import sas.part.time.job.json.JSONParser;
 import sas.part.time.job.pojo.LoginData;
 import sas.part.time.job.userInterface.ILogin;
 import sas.part.time.job.utils.PartTimeMessage;
@@ -54,7 +47,7 @@ public class LoginServer extends AsyncTask<Void, Void, LoginData> {
 
 		LoginData data = new LoginData();
 
-		try { 
+		/*try {
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("email_id", UserName));
 			nameValuePairs.add(new BasicNameValuePair("password", Password));
@@ -94,7 +87,7 @@ public class LoginServer extends AsyncTask<Void, Void, LoginData> {
 			data.setResult(false);
 			data.setMessage(appMessage.getErrorMessage());
 			e.printStackTrace();
-		} 
+		} */
 
 		return data;
 	} 

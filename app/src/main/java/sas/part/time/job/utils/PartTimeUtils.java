@@ -12,8 +12,6 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.TimeZone;
 
-import com.google.android.gms.ads.AdRequest;
-
 import sas.part.time.job.R;
 import sas.part.time.job.database.DatabaseInfo;
 import sas.part.time.job.pojo.Country;
@@ -45,7 +43,10 @@ public class PartTimeUtils {
 	private final 	int 				JOB_ACTIVE 				= 1; 
 	private final 	int 				SUBSCRIBED 				= 0; 
 	private final 	int 				UNSUBSCRIBED 			= 1; 
-	private static 	AdRequest 			adRequest				= null;
+	//private static 	AdRequest 			adRequest				= null;
+
+	public	static final String			USER					= "user";
+	public	static final String			IMAGES					= "images";
 
 	private PartTimeUtils() {}
 
@@ -92,16 +93,16 @@ public class PartTimeUtils {
 		FORMATTER2.setTimeZone(TimeZone.getDefault()); //TimeZone.getTimeZone("UTC")
 	}
 
-	public static AdRequest getAdRequest() {
+	/*public static AdRequest getAdRequest() {
 		
 		if(adRequest==null) {
 			adRequest = new AdRequest.Builder()
-			//.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-			//.addTestDevice("733B35E050031D04CB62668318DD46ED") 
+			.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+			.addTestDevice("733B35E050031D04CB62668318DD46ED")
 			.build();
 		}
 		return adRequest;
-	}
+	}*/
 
 	public Date convertStringToDate(String date) {
 		try {
@@ -122,7 +123,7 @@ public class PartTimeUtils {
 		return "";
 	}
 
-	public class JobDataSortByDate implements Comparator<JobData> {
+	public static class JobDataSortByDate implements Comparator<JobData> {
 
 		@Override
 		public int compare(JobData arg0, JobData arg1) {
@@ -294,8 +295,7 @@ public class PartTimeUtils {
 	}
 
 	public Bitmap makeScaling(Activity activity, String originalpath) {
-
-		/*String dir = getDirectory(); 
+		String dir = getDirectory();
 		File file = new File(originalpath);
 		String filepath = dir + file.getName();
 		File newfile = new File(filepath);
@@ -306,9 +306,7 @@ public class PartTimeUtils {
 			} catch (IOException e) {
 				e.printStackTrace();
 			} 
-		}*/
-
-
+		}
 		return decodeFile(activity, originalpath);
 	}
 
@@ -316,7 +314,6 @@ public class PartTimeUtils {
 
 		File f = new File(filePath);
 		try {
-
 			DisplayMetrics dm = new DisplayMetrics();
 			activity.getWindowManager().getDefaultDisplay().getMetrics(dm);
 			int w = dm.widthPixels;
