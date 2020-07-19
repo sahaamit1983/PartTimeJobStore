@@ -9,6 +9,7 @@ public class PartTimeMessage {
 	private final String NetworkFailure    	= "Network is not available";
 	private final String AgeValidation    	= "Your age is below 14 years, you can't create this account";
 	private final String InsertText    		= "Please insert some text";
+	private final String RegistrationSuccess    		= "Registration done successfully";
 	
 
 	private PartTimeMessage() {}
@@ -39,6 +40,10 @@ public class PartTimeMessage {
 
 	public String getErrorMessage() {
 		return ErrorMsg;
+	}
+
+	public String getRegistrationSuccessMessage() {
+		return RegistrationSuccess;
 	}
 
 }

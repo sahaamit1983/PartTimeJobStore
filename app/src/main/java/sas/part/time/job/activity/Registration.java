@@ -464,9 +464,8 @@ public class Registration extends Activity implements IRegistration {
     public void onRegistration(ResultMsg data) {
         if (data.isResult()) {
             finish();
-        } else {
-            Toast.makeText(getApplicationContext(), data.getMessage(), Toast.LENGTH_LONG).show();
         }
+        Toast.makeText(getApplicationContext(), data.getMessage(), Toast.LENGTH_LONG).show();
     }
 
     private String getMonth(int month) {

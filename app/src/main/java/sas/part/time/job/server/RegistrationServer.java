@@ -30,8 +30,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -112,6 +110,7 @@ public class RegistrationServer {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     data.setResult(true);
+                    data.setMessage(appMessage.getRegistrationSuccessMessage());
                 }
 
                 @Override
@@ -145,6 +144,7 @@ public class RegistrationServer {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     data.setResult(true);
+                                    data.setMessage(appMessage.getRegistrationSuccessMessage());
                                     onPostExecute(data);
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
